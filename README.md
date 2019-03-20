@@ -3,6 +3,8 @@ Flutter的学习之路
 
 Flutter技术交流qq:165132359
 
+Flutter技术交流qq群:669463368
+
 一、搭建开发环境:
 
   1.https://flutter.dev/docs/get-started/install 下载flutter下载sdk。
