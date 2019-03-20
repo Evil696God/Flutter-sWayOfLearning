@@ -29,7 +29,12 @@ Flutter技术交流qq群:669463368
   
   Widget: Constructor Function-> build()。
   
-  2.StatefulWidget:可变化状态小部件。
+  2.StatefulWidget:可变化状态小部件;
   
-  3.
+  StatefulWidget生命周期: InputData-> Widget-> Rendders UI;
+  
+  widget: Constructor Function-> initState()-> build()--> setState();
+  
+  发生变化时: didUpdateWidget()-> build()。
+  
   
