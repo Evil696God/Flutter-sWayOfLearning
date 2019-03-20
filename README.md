@@ -19,4 +19,11 @@ Flutter技术交流qq:165132359
   
 三、基本常用类学习:
 
-  1.StatelessWidget:
+  1.StatelessWidget:无变化状态小部件,创建后直接显示,不会有色值、大小或其它属性的变化;
+  StatelessWidget生命周期:InputData-> Widget-> Rendders UI;
+  Widget:Constructor Function-> build()。
+  
+  2.StatefulWidget:可变化状态小部件。
+  
+  3.
+  
