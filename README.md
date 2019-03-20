@@ -3,7 +3,7 @@ Flutter的学习之路
 Flutter技术交流qq:165132359
 
 一、搭建开发环境:
-  1.https://flutter.dev/docs/get-started/install下载flutter下载sdk。
+  1.https://flutter.dev/docs/get-started/install 下载flutter下载sdk。
   
   2.配置flutter开发环境,flutter文件夹下bin文件夹配置在系统环境变量里。
   
