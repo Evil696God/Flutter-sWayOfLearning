@@ -37,4 +37,30 @@ Flutter技术交流qq群:669463368
   
   发生变化时: didUpdateWidget()-> build()。
   
+  3.MaterialApp代表Material Design风格的应用,基本控件包含:
+  
+  title: 任务管理器窗口显示的名字;
+  
+  theme: 主题颜色;
+  
+  color: 任务管理器窗口显示的颜色;
+  
+  home: 应用默认显示的界面;
+  
+  routes: 应用顶级导航表格;
+  
+  initialRoute: 第一个显示路由的名字;
+  
+  onGenerateRoute: 生成路由的回调函数;
+  
+  onLocaleChanged: 系统修改语言触发的回调;
+  
+  navigatorObservers: 应用Navigator的监视器;
+  
+  debugShowMaterialGrid: 是否显示基础布局网格,调试UI的工具;
+  
+  showPerformanceOverlay: 显示性能标签;
+  
+  
+  
   
