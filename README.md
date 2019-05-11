@@ -98,6 +98,8 @@ Flutter技术交流qq群:669463368
     
     (5) MyHomePageState类中重写dispose方法,方法中对TabController对象dispose。
     
-    (6) MyHomePageState类中重写build方法,创建Scaffold对象;body参数为TabBarView对象,TabBarView对象参数controller为TabController对象,参数         children为<Widget>包含FirstPage,SecondPage,ThirdPage;bottomNavigationBar参数为Material对象,参数child为TabBar对象,TabBar对象参数             controller为TabBarView对象,参数tabs为<Tab>包含Tab对象并设置相关名称和图标。
+    (6) MyHomePageState类中重写build方法,创建Scaffold对象;
+    body参数为TabBarView对象,TabBarView对象参数controller为TabController对象,参数children为<Widget>包含FirstPage,SecondPage,ThirdPage;
+    bottomNavigationBar参数为Material对象,参数child为TabBar对象,TabBar对象参数controller为TabBarView对象,参数tabs为<Tab>包含Tab对象并设置相关名称和图标。
   
   
