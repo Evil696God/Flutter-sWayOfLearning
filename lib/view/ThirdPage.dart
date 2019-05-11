@@ -6,7 +6,6 @@ class ThirdPage extends StatefulWidget {
     // TODO: implement createState
     return new ThirdPageState();
   }
-
 }
 
 class ThirdPageState extends State<ThirdPage> {
@@ -18,9 +17,8 @@ class ThirdPageState extends State<ThirdPage> {
         title: Text("界面3"),
       ),
       body: new Center(
-        child: Text("这是界面3"),
+        child: Text("这是第三个界面"),
       ),
     );
   }
-
 }
