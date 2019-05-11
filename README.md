@@ -79,6 +79,7 @@ Flutter技术交流qq群:669463368
   
   resizeToAvoidBottomPadding: 类似Android中的android:windowSoftInputMode=”adjustResize”,控制界面body是否重新布局来避免底部被覆盖,如键盘遮挡,   默认值为true。
   
-  
+四、项目实现基础界面展示功能:
+  1. 实现tab切换界面:
   
   
