@@ -79,6 +79,11 @@ Flutter技术交流qq群:669463368
   
   resizeToAvoidBottomPadding: 类似Android中的android:windowSoftInputMode=”adjustResize”,控制界面body是否重新布局来避免底部被覆盖,如键盘遮挡,   默认值为true。
   
+  5.State是当Widget被渲染或者在其生命周期中状态改变时，能同步读到相关信息的对象。
+  
+  State生命周期:开始->构造函数->initState->didChangeDependencies->build->显示在RenderTree->移除->deactivate->dispose->结束;
+  显示在RenderTree->组件状态改变->didUpdateWidget->build->显示在RenderTree
+  
 四、项目实现基础界面展示功能:
 
   1. 实现tab切换界面: 功能类似于Android的ViewPager。
