@@ -80,12 +80,19 @@ Flutter技术交流qq群:669463368
   resizeToAvoidBottomPadding: 类似Android中的android:windowSoftInputMode=”adjustResize”,控制界面body是否重新布局来避免底部被覆盖,如键盘遮挡,   默认值为true。
   
 四、项目实现基础界面展示功能:
+
   1. 实现tab切换界面: 功能类似于Android的ViewPager。
+  
     (1) 编写MyHomePage,继承StatefulWidget。
+    
     (2) 编写MyHomePageState,继承State,泛型为创建MyHomePage。
+    
     (3) MyHomePage类中重写createState方法,createState方法中创建MyHomePageState对象并返回。
+    
     (4) MyHomePageState类中重写initState方法,方法中创建全局变量TabController对象,TabController构造器中length表示滑动页面总数。
+    
     (5) MyHomePageState类中重写dispose方法,方法中对TabController对象dispose。
+    
     (6) MyHomePageState类中重写build方法,创建Scaffold对象;body参数为TabBarView对象,TabBarView对象参数controller为TabController对象,参数         children为<Widget>包含FirstPage,SecondPage,ThirdPage;bottomNavigationBar参数为Material对象,参数child为TabBar对象,TabBar对象参数             controller为TabBarView对象,参数tabs为<Tab>包含Tab对象并设置相关名称和图标。
   
   
