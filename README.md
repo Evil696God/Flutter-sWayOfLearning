@@ -60,6 +60,16 @@ Flutter技术交流qq群:669463368
   debugShowMaterialGrid: 是否显示基础布局网格,调试UI的工具;
   
   showPerformanceOverlay: 显示性能标签;
+
+  4.Scaffold代表基本的纸墨设计布局结构,基础控件包含:
+  appBar: 显示在界面顶部的AppBar,也就是Android中的ActionBar,ToolBar;
+  body: 当前界面显示的主要内容Widget。
+  floatingActionButton: 纸墨设计中FAB,界面的主要功能按钮。
+  persistentFooterButtons: 固定在下方的按钮,比如对话框下方的确定、取消按钮。
+  drawer: 侧边栏控件。
+  backgroundColor: 内容背景颜色。
+  bottomNavigationBar: 显示在底部的导航栏。
+  resizeToAvoidBottomPadding: 类似Android中的android:windowSoftInputMode=”adjustResize”,控制界面body是否重新布局来避免底部被覆盖,如键盘遮挡,   默认值为true。
   
   
   
