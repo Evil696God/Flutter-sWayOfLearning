@@ -127,16 +127,23 @@ child: container中的内容widget。
 container绘制过程: 
 
   ⑴ 首先绘制transform效果。
+  
   ⑵ 接着绘制decoration。
+  
   ⑶ 绘制child。
+  
   ⑷ 最后绘制foregroundDecoration。
   
 container布局顺序:
 
   ⑴ 对齐alignment。
+  
   ⑵ 调节自身尺寸适合子节点。
+  
   ⑶ 采用width、height和constraints布局。
+  
   ⑷ 扩展自身去适应父节点。
+  
   ⑸ 调节自身到足够小。
   
 container继承关系: 
