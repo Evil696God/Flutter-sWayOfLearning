@@ -21,6 +21,8 @@ Flutter技术交流qq群:669463368
   
   2.lib下main.dart文件内main()为应用程序入口。
   
+  3.添加依赖库: 找到pubspec.yaml文件;文件中dependencies下默认添加了flutter和cupertino_icons,如需继续添加其它库则在下方添加对应库名和版本号。
+  
 三、基本常用类学习:
 
   1.StatelessWidget: 无变化状态小部件,创建后直接显示,不会有色值、大小或其它属性的变化;
