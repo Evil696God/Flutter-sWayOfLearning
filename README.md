@@ -153,6 +153,79 @@ container继承关系:
   
   ⑷ ListView.custom的SliverChildDelegate,SliverChildDelegate可以控制实际不可见的子元素大小的算法。
 
+8.Column是flex垂直布局控件,能够将子控件垂直排列,基础控件包含:
+
+mainAxisAlignment:主轴布局方式,column主轴为垂直布局方式。
+
+  ⑴ start : 沿主轴方向顶部对齐。
+  
+  ⑵ end: 沿主轴方向底部对齐。
+  
+  ⑶ center: 沿主轴方向居中对齐。
+  
+  ⑷ spaceBetween: 沿主轴方向平分剩余空间。
+  
+  ⑸ spaceAround: 把剩余空间平分成n份，n是子widget的数量，然后把其中一份空间分成2份，放在第一个child的前面，和最后一个child的后面。
+  
+  ⑹ spaceEvenly: 把剩余空间平分n+1份，然后平分所有的空间，请注意和spaceAround的区别。
+
+crossAxisAlignment: 交叉布局方式,对于column相当于水平布局方式。
+
+  ⑴ start : 垂直主轴方向左侧对齐。
+  
+  ⑵ end: 垂直主轴方向右侧对齐。
+  
+  ⑶ center: 垂直主轴方向居中对齐。
+  
+  ⑷ stretch: 垂直主轴方向(水平方向)拉伸子child。
+  
+  ⑸ baseline: 与textBaseline一起使用。
+
+textBaseline: 字体的基线。
+
+  ⑴ alphabetic: 用于对齐字母字符底部的水平线。
+  
+  ⑵ ideographic: 用于对齐表意字符的水平线。
+
+textDirection: 文字布局的方式。
+
+  ⑴TextDirection.ltr: 从左到右。
+  
+  ⑵TextDirection.rtl: 从右到左布局。
+
+verticalDirection: 垂直布局方向,上或下。
+
+  ⑴down: 从上向下布局。
+  
+  ⑵up: 从下向上布局。
+  
+其它参数参考Row控件,方向由水平变为垂直。
+  
+9.Row是flex水平布局控件,能够将子控件水平排列,基础控件包含:
+
+MainAxisSize: 在主轴方向占有空间的值，默认是max。
+
+  ⑴max: 根据传入的布局约束条件，最大化主轴方向的可用空间。
+  
+  ⑵min: 与max相反，是最小化主轴方向的可用空间。
+  
+其它参数参考Column控件,方向由垂直变为水平。
+
+继承关系: Object -> Diagnosticable -> DiagnosticableTree -> Widget -> RenderObjectWidget -> MultiChildRenderObjectWidget -> Flex -> Row
+  
+10.ListTile一个固定高度包括文字和图标的控件,基础控件包含:
+
+leading: 最左侧的头部控件widget。
+
+title: 标题title,文本widget。
+
+subtitle: 富文本标题,文本widget。
+
+trailing: 展示在title后面最末尾的后缀组件widget。
+
+onTap: 点击事件。
+
+其它参数参考其它widget参数使用。
   
 四、项目实现基础界面展示功能:
 
@@ -184,6 +257,18 @@ container继承关系:
     
     itemCount参数为列表item个数,itemBuilder参数为item的widget;
     
-    创建Card对象,child赋值为Container对象
+    创建Card对象,child参数赋值为Container对象;
+    
+    创建Container对象,padding参数为EdgeInsets对象,可设置不同方向内间距;child参数为ListTile对象。
+    
+    创建ListTile对象,subtitle参数为Container对象;trailing参数为Icon对象。
+    
+    创建Container对象,child参数为Column对象。
+    
+    创建Column对象,mainAxisAlignment参数为MainAxisAlignment.spaceBetween;children参数为<Widget>数组,数组内元素为Row对象。
+    
+    创建Row对象,mainAxisAlignment参数为MainAxisAlignment.spaceBetween;children参数可为Text对象也可为Row或Column对象搭建更复杂的widget。
+    
+  
   
   
