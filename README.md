@@ -278,6 +278,33 @@ onTap: 点击事件。
     
     创建Row对象,mainAxisAlignment参数为MainAxisAlignment.spaceBetween;children参数可为Text对象也可为Row或Column对象搭建更复杂的widget。
     
+五、踩坑之路:
+
+  1.no devices:  
   
+    export PUB_HOSTED_URL=https://pub.flutter-io.cn
+    
+    export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
+    
+    git clone -b dev https://github.com/flutter/flutter.git
+    
+    export PATH="$PWD/flutter/bin:$PATH"
+    
+    cd ./flutter
+    
+    flutter doctor
+    
+    检查是否版本太旧,中国网络设置对应下载地址,与翻墙软件共同使用会发生冲突。
+    
+  2.添加依赖库过慢导致失败:
+  
+     windows解决方案：
+
+     配置 【用户环境变量】：
+     
+     FLUTTER_STORAGE_BASE_URL: https://mirrors.sjtug.sjtu.edu.cn/
+     
+     PUB_HOSTED_URL: https://dart-pub.mirrors.sjtug.sjtu.edu.cn/
+
   
   
