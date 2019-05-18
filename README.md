@@ -235,6 +235,22 @@ trailing: 展示在title后面最末尾的后缀组件widget。
 onTap: 点击事件。
 
 其它参数参考其它widget参数使用。
+
+11.Fluttertoast.showToast,一个toast,基础控件包含:
+
+msg: 提示内容。
+      
+toastLength: 提示窗显示时长。
+      
+gravity: 提示窗显示位置。
+      
+timeInSecForIos: 展示时长，仅iOS有效。
+
+backgroundColor: 背景颜色。
+
+textColor: 文字颜色。
+
+fontSize: 文字大小。
   
 四、项目实现基础界面展示功能:
 
@@ -278,6 +294,16 @@ onTap: 点击事件。
     
     创建Row对象,mainAxisAlignment参数为MainAxisAlignment.spaceBetween;children参数可为Text对象也可为Row或Column对象搭建更复杂的widget。
     
+  3.实现列表item点击事件,并弹出toast。
+  
+    ⑴ pubspec.yaml文件中dependencies: 下添加fluttertoast: ^3.1.0依赖库。
+    
+    ⑵ ListTile对象参数onTap赋值点击事件方法。
+    
+    ⑶ 调用Fluttertoast.showToast方法;
+    
+
+   
 五、踩坑之路:
 
   1.no devices:  
