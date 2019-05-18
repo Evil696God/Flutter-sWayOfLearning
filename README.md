@@ -124,6 +124,34 @@ transform: 设置container变换矩阵,类型为Matrix4。
 
 child: container中的内容widget。
 
+container绘制过程: 
+
+  ⑴ 首先绘制transform效果。
+  ⑵ 接着绘制decoration。
+  ⑶ 绘制child。
+  ⑷ 最后绘制foregroundDecoration。
+  
+container布局顺序:
+
+  ⑴ 对齐alignment。
+  ⑵ 调节自身尺寸适合子节点。
+  ⑶ 采用width、height和constraints布局。
+  ⑷ 扩展自身去适应父节点。
+  ⑸ 调节自身到足够小。
+  
+container继承关系: 
+
+  Object->Diagnosticable->DiagnosticableTree->Widget->StatelessWidget->container
+
+7.ListView是一个线性布局的多widget列表,四种方式可以构建:
+  
+  ⑴ List<Widget>,适合少量子元素列表视图,因为构造列表需要为列表每一个子元素执行工作,而不是可见子元素。
+  
+  ⑵ ListView.builder,利用IndexedWidgetBuilder按需构造,适合大量或无限子元素的列表视图,只对可见子元素调用。
+  
+  ⑶ ListView.separated,采用两个IndexedWidgetBuilder:itemBuilder根据需要构建的子项separatorBuilder类似的构建子项分隔符子项,适合固定个数子元素的列表视图。
+  
+  ⑷ ListView.custom的SliverChildDelegate,SliverChildDelegate可以控制实际不可见的子元素大小的算法。
 
   
 四、项目实现基础界面展示功能:
