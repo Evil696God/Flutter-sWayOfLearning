@@ -84,13 +84,15 @@ Flutter技术交流qq群:669463368
   State生命周期:开始->构造函数->initState->didChangeDependencies->build->显示在RenderTree->移除->deactivate->dispose->结束;
   显示在RenderTree->组件状态改变->didUpdateWidget->build->显示在RenderTree。
   
-  三个阶段: ⑴ 初始化initState
+  三个阶段: 
+           ⑴ 初始化initState
   
            ⑵ 状态改变
            
            ⑶ 销毁dispose
      
-  State与StatefulWidget区别: ⑴ 不同的生命周期。
+  State与StatefulWidget区别: 
+                            ⑴ 不同的生命周期。
   
                             ⑵ Widget首次插入到渲染树中时,框架会调用createState创建一个新的State与该树中位置关联,当widget父集重建时,父集将创建一个新的Widget,但框架会重用树中的State,不会重新调用createState创建新的实例。
   
