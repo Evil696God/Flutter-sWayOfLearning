@@ -333,6 +333,6 @@ fontSize: 文字大小。
      PUB_HOSTED_URL: https://dart-pub.mirrors.sjtug.sjtu.edu.cn/
 六、常用框架:
 
-  https://github.com/Evil696God/Flutter-sWayOfLearning/blob/master/Flutter%E5%B8%B8%E7%94%A8%E6%A1%86%E6%9E%B6.png
+  ![image text](https://github.com/Evil696God/Flutter-sWayOfLearning/blob/master/Flutter%E5%B8%B8%E7%94%A8%E6%A1%86%E6%9E%B6.png)
   
   
